@@ -9,7 +9,6 @@
   text-align: center;
 }
 
-
 h1,h2,h3,h4,h5,h6,p,li,a {
   margin: 0;
   color: $text-color;
@@ -22,19 +21,24 @@ header {
   background-color: $primary;
   font-weight: normal;
   overflow: hidden;
-
-  li {
-    display: inline;
+  ul {
     text-align: center;
-    margin-left: 45px;
-  }
-  a {
-    text-decoration: none;
-  }
+    padding: 0;
 
-  a:hover {
-    color: $secondary;
-    text-decoration: underline;
+    li {
+      display: inline;
+      text-align: center;
+      margin-left: 45px;
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -42,22 +46,28 @@ header {
   height: 150px;
   color: $text-color;
   background-color: #d3795f;
+  button:hover {
+    color: $secondary;
+  }
 
     .banner-text {
     @include centering;
     padding: 0px 150px;
     font-family: sans-serif;
+    line-height: 1.15;
+    font-size: 20px;
+    font-weight: normal;
   }
 }
 
-button {
-  background-color: transparent;
-}
 
 .hero {
   height: 500px;
   background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=0404a6987743c9f447f3abde5e2a34d8");
   background-size: cover;
+  button:hover {
+    color: $secondary;
+  }
 
   .hero-text {
     @include centering;
@@ -65,7 +75,29 @@ button {
     font-style: 36px;
 
     h1 {
-      font-size: 50px;
+      font-size:65px;
     }
+
+
   }
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: sans-serif;
+  font-size: 21px;
+  border-radius: 5px;
+  padding: 5px;
+margin-top: 30px;
+  text-transform: uppercase;
+  color:white;
+  font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+
+
+
+
+
 }
