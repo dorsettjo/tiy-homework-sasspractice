@@ -1,0 +1,71 @@
+@import "partials/type";
+
+
+
+@mixin centering {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+h1,h2,h3,h4,h5,h6,p,li,a {
+  margin: 0;
+  color: $text-color;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+
+header {
+  background-color: $primary;
+  font-weight: normal;
+  overflow: hidden;
+
+  li {
+    display: inline;
+    text-align: center;
+    margin-left: 45px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $secondary;
+    text-decoration: underline;
+  }
+}
+
+.banner {
+  height: 150px;
+  color: $text-color;
+  background-color: #d3795f;
+
+    .banner-text {
+    @include centering;
+    padding: 0px 150px;
+    font-family: sans-serif;
+  }
+}
+
+button {
+  background-color: transparent;
+}
+
+.hero {
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=0404a6987743c9f447f3abde5e2a34d8");
+  background-size: cover;
+
+  .hero-text {
+    @include centering;
+    font-family: sans-serif;
+    font-style: 36px;
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+}

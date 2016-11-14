@@ -1,0 +1,50 @@
+h1, h2, h3, h4, h5, h6, p, li, a {
+  margin: 0;
+  color: #3c4242;
+  text-transform: uppercase;
+  font-weight: normal; }
+
+header {
+  background-color: #94b4b3;
+  font-weight: normal;
+  overflow: hidden; }
+  header li {
+    display: inline;
+    text-align: center;
+    margin-left: 45px; }
+  header a {
+    text-decoration: none; }
+  header a:hover {
+    color: #d3795f;
+    text-decoration: underline; }
+
+.banner {
+  height: 150px;
+  color: #3c4242;
+  background-color: #d3795f; }
+  .banner .banner-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 0px 150px;
+    font-family: sans-serif; }
+
+button {
+  background-color: transparent; }
+
+.hero {
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=0404a6987743c9f447f3abde5e2a34d8");
+  background-size: cover; }
+  .hero .hero-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: sans-serif;
+    font-style: 36px; }
+    .hero .hero-text h1 {
+      font-size: 50px; }
+
+/*# sourceMappingURL=style.css.map */
